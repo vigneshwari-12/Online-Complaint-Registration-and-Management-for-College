@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <style>
+       h1{
+            color:blue;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("complaintracking-img.png");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+             background-color: #fffffff6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(199, 148, 167, 0.1);
+            text-align: center;
+            width: 700px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Register a Complaint</h1>
+    <form action="process_complaint.php" method="post">
+
+        <!Choose block or department in which issue is to be resolved>
+        <h3>Issue in block: </h3>
+        <select id="type_block">
+        <option value="select">--select--</option>
+        <option value="Admin">Admin</option>
+        <option value="Canteen">Canteen</option>
+        <option value="CSE Block">CSE Block</option>
+        <option value="ECE Block">ECE Block</option>
+        <option value="EEE Block">EEE Block</option>
+        <option value="Ground/Auditiorium">Ground/Auditiorium</option>
+        <option value="Hostel">Hostel</option>
+        <option value="IT Block">IT Block</option>
+        <option value="Library">Library</option>
+        </select>
+
+        <h3>Select type of Complaint:</h3>
+        <select id="type_complaint">
+        <option value="select">--select--</option>
+        <option value="Carpentery">Carpentery</option>
+        <option value="Electricity">Electricity</option>
+        <option value="Gardening">Gardening</option>
+        <option value="General Maintainance">General Maintainance</option>
+        <option value="Pulmber">Plumber</option>
+
+        </select>
+
+        <!Priority>
+        <h3>Priority: </h3>
+        <select id="type_priority">
+        <option value="select">--select--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+               
+        <h3>Details of the issue: </h3>
+        <textarea id="complaint" name="complaint" rows="8" cols="70" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
+

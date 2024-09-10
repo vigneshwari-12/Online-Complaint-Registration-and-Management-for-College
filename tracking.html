@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complaint Tracking</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+  <h1>Complaint Tracking</h1>
+  <p>Welcome to the complaint tracking module.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Complaint ID</th>
+        <th>Status</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>123456</td>
+        <td>In Progress</td>
+        <td><a href="complaint-details.html?id=123456">View Details</a></td>
+      </tr>
+      <tr>
+        <td>789012</td>
+        <td>Resolved</td>
+        <td><a href="complaint-details.html?id=789012">View Details</a></td>
+      </tr>
+      <!-- Add more rows for each complaint -->
+    </tbody>
+  </table>
+</body>
+</html>
